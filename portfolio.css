@@ -1,0 +1,14 @@
+@media (max-width: 300px){
+    #projects{
+        width: 100%;
+    }
+}
+
+#navbar{
+    position: absolute;
+    top: 0;
+}
+
+#main{
+    top: 100px;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Music Taste Survey</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="survey.css">
+    </head>
+    
+    <body>
+        <h1 id="title">Music Taste Survey</h1>
+        <p id="description">Tell us what you like!</p>
+        
+        <form id="survey-form">
+            
+            <fieldset>
+                <label id="name-label">Name <input id="name" type="text" required placeholder="ex: Jon Bon Jovi"></label>
+                <label id="email-label">Email <input id="email" type="email" required placeholder="ex: bonjovi@adr.dom"></label>
+                <label id="number-label">Age <input id="number" type="number" min=10 max=120 required placeholder="ex: 30"></label>
+
+            </fieldset>
+            <fieldset>
+                <label id="genre">What is your favorite genre?
+                    <select id="dropdown">
+                        <option>Heavy metal</option>
+                        <option>Thrash metal</option>
+                        <option>Death metal</option>
+                        <option>Black metal</option>
+                        <option>Glam metal</option>
+                        <option>Deathcore</option>
+                        <option>Rock</option>
+                        <option>Grunge</option>
+                        <option>other</option>
+                    </select>
+                </label>
+            </fieldset>
+            
+            <fieldset>
+                <label id="hope">Do you still have hope?
+                    <label id="definitely"><input type=radio name="hoperadio" value=1> Definitely</label>
+                    <label id="maybe"><input type=radio name="hoperadio" value=2> Maybe</label>
+                    <label id="not-sure"><input type=radio name="hoperadio" value=3> Not sure</label>
+                    <label id="nope"><input type=radio name="hoperadio" value=4> Nope.</label>
+                </label>
+            </fieldset>
+            
+            <fieldset>
+                <label id="artists-label">Choose your favorite bands
+                    <label id="Iron-Maiden"> <input type="checkbox" value=1> Iron Maiden</label>
+                    <label id="Metallica"> <input type="checkbox" value=2> Metallica</label>
+                    <label id="Nirvana"> <input type="checkbox" value=3> Nirvana</label>
+                    <label id="Slipknot"> <input type="checkbox" value=4> Slipknot</label>
+                    <label id="Blue-Oyster-Cult"> <input type="checkbox" value=5> Blue Oyster Cult</label>
+                    <label id="Beatles"> <input type="checkbox" value=6> The Beatles</label>
+                </label>
+            </fieldset>
+            
+            <fieldset>
+                <label id="describe">Describe your music taste
+                    <textarea name="textarea" rows="3" cols="30" placeholder="I like to be sad..."></textarea>
+                </label>
+            </fieldset>
+            
+            <input type="submit" id="submit">
+        </form>
+    </body>
+</html>
